@@ -22,15 +22,14 @@ if (isNaN(avarage)) {
 // Way 2 with foreach
 let total2 = 0;
 let avarage2 = 0;
-let count2=0
+let count2 = 0;
 
-  argv.forEach((val, index) => {
-
-    if (!isNaN(val)) {
-      total2 += parseInt(val);
-      count2+=1
-      avarage2 = total2 / count2;
-    }
-  });
+argv.forEach((val, index) => {
+  if (!isNaN(val)) {
+    total2 += parseInt(val);
+    count2 += 1;
+    avarage2 = total2 / count2;
+  }
+});
 
 console.log(` The average of the numbers is  $foreach$ : ${avarage2}`);
